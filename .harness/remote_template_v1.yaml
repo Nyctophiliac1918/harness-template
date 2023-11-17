@@ -1,0 +1,14 @@
+template:
+  name: remote template
+  identifier: remote_template
+  versionLabel: v1
+  type: MonitoredService
+  projectIdentifier: templatetesting
+  orgIdentifier: cvng
+  tags: {}
+  spec:
+    serviceRef: <+input>
+    environmentRef: <+input>
+    type: Application
+    sources:
+      healthSources: []
