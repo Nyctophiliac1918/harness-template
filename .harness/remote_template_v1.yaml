@@ -7,7 +7,7 @@ template:
   orgIdentifier: cvng
   tags: {}
   spec:
-    serviceRef: azureservice
+    serviceRef: <+input>
     environmentRef: <+input>
     type: Application
     sources:
