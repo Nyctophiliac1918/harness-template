@@ -7,7 +7,7 @@ template:
   orgIdentifier: cvng
   tags: {}
   spec:
-    serviceRef: <+input>
+    serviceRef: svdt
     environmentRef: <+input>
     type: Application
     sources:
