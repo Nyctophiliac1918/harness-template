@@ -1,6 +1,8 @@
 inputSet:
   name: Build_harness_template_1702909328306-push-trigger-input-set
+  tags: {}
   identifier: Build_harness_template_1702909328306pushtriggerinputset
+  description: TESTING
   orgIdentifier: default
   projectIdentifier: karan_test
   pipeline:
@@ -12,3 +14,21 @@ inputSet:
             type: branch
             spec:
               branch: <+trigger.branch>
+    stages:
+      - stage:
+          identifier: custom
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    timeout: 15m
+  provider:
+    type: Others
+    title: Third-party Git provider
+    info: Store pipeline in a third party Git provider
+    icon: service-github
+    size: 20
+    disabled: false
