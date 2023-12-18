@@ -1,0 +1,22 @@
+inputSet:
+  name: test 2345
+  identifier: test_2345
+  orgIdentifier: default
+  projectIdentifier: karan_test
+  pipeline:
+    identifier: test_2
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: main
+  provider:
+    type: Others
+    title: Third-party Git provider
+    info: Store pipeline in a third party Git provider
+    icon: service-github
+    size: 20
+    disabled: false
+  object Object: pipeline.properties.ci.codebase
