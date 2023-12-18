@@ -1,0 +1,30 @@
+inputSet:
+  name: testing 2
+  identifier: testing_2
+  orgIdentifier: default
+  projectIdentifier: karan_test
+  pipeline:
+    identifier: Build_harness_template_1702909328306
+    properties:
+      ci:
+        codebase:
+          build: <+input>
+    stages:
+      - stage:
+          identifier: custom
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    timeout: 15m
+  provider:
+    type: Others
+    title: Third-party Git provider
+    info: Store pipeline in a third party Git provider
+    icon: service-github
+    size: 20
+    disabled: false
+  object Object: pipeline.properties.ci.codebase
