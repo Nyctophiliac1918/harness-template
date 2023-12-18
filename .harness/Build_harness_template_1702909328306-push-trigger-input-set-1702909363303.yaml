@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_harness_template_1702909328306-push-trigger-input-set
+  identifier: Build_harness_template_1702909328306pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: karan_test
+  pipeline:
+    identifier: Build_harness_template_1702909328306
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
