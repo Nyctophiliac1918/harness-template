@@ -1,0 +1,49 @@
+---
+pipeline:
+  projectIdentifier: "karan_test"
+  orgIdentifier: "NgTriggersOrg"
+  tags: {}
+  stages:
+  - stage:
+      name: "deploy"
+      identifier: "deploy"
+      description: ""
+      type: "Deployment"
+      spec:
+        deploymentType: "Kubernetes"
+        service:
+          serviceRef: "<+input>"
+          serviceInputs: "<+input>"
+        environment:
+          environmentRef: "<+input>"
+          deployToAll: false
+          environmentInputs: "<+input>"
+          serviceOverrideInputs: "<+input>"
+          infrastructureDefinitions: "<+input>"
+        execution:
+          steps:
+          - step:
+              name: "Rollout Deployment"
+              identifier: "rolloutDeployment"
+              type: "K8sRollingDeploy"
+              timeout: "10m"
+              spec:
+                skipDryRun: false
+                pruningEnabled: false
+          rollbackSteps:
+          - step:
+              name: "Rollback Rollout Deployment"
+              identifier: "rollbackRolloutDeployment"
+              type: "K8sRollingRollback"
+              timeout: "10m"
+              spec:
+                pruningEnabled: false
+      tags: {}
+      failureStrategies:
+      - onFailure:
+          errors:
+          - "AllErrors"
+          action:
+            type: "StageRollback"
+  identifier: "karan_test_Clone_2"
+  name: "karan test - Clone 2"
