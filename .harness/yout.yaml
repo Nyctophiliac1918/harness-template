@@ -1,5 +1,6 @@
 inputSet:
   name: yout
+  tags: {}
   identifier: yout
   orgIdentifier: NgTriggersOrg
   projectIdentifier: karan_test
@@ -15,11 +16,11 @@ inputSet:
                 - step:
                     identifier: ShellScript_1
                     type: ShellScript
-                    timeout: 5m
+                    timeout: 15m
   provider:
-    type: Harness
-    title: Harness Code Repository
-    info: Store pipeline in Harness repository
-    icon: code
-    size: 22
+    type: Others
+    title: Third-party Git provider
+    info: Store pipeline in a third party Git provider
+    icon: service-github
+    size: 20
     disabled: false
