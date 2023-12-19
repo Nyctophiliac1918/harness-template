@@ -1,0 +1,25 @@
+inputSet:
+  name: yout
+  identifier: yout
+  orgIdentifier: NgTriggersOrg
+  projectIdentifier: karan_test
+  pipeline:
+    identifier: test_567
+    stages:
+      - stage:
+          identifier: ff
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    timeout: 5m
+  provider:
+    type: Harness
+    title: Harness Code Repository
+    info: Store pipeline in Harness repository
+    icon: code
+    size: 22
+    disabled: false
