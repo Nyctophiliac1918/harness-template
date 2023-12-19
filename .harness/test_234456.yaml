@@ -1,0 +1,25 @@
+inputSet:
+  name: test 234456
+  identifier: test_234456
+  orgIdentifier: NgTriggersOrg
+  projectIdentifier: karan_test
+  pipeline:
+    identifier: karan_test_Clone_2
+    stages:
+      - stage:
+          identifier: deploy
+          type: Deployment
+          spec:
+            service:
+              serviceRef: account.ghhj
+            environment:
+              environmentRef: account.Dev
+              infrastructureDefinitions:
+                - identifier: dfdsf
+  provider:
+    type: Others
+    title: Third-party Git provider
+    info: Store pipeline in a third party Git provider
+    icon: service-github
+    size: 20
+    disabled: false
