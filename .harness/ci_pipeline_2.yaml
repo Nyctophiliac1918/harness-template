@@ -1,0 +1,12 @@
+pipeline:
+  name: ci pipeline 2
+  identifier: ci_pipeline_2
+  projectIdentifier: karan_test
+  orgIdentifier: NgTriggersOrg
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: <+input>
+        repoName: <+input>
+        build: <+input>
