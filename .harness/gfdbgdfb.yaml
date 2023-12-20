@@ -1,5 +1,6 @@
 inputSet:
   name: gfdbgdfb
+  tags: {}
   identifier: gfdbgdfb
   orgIdentifier: NgTriggersOrg
   projectIdentifier: karan_test
@@ -11,7 +12,14 @@ inputSet:
           type: Deployment
           spec:
             service:
-              serviceRef: org.test1k8
+              serviceRef: account.hello
+              serviceInputs:
+                serviceDefinition:
+                  type: Kubernetes
+                  spec:
+                    artifacts:
+                      primary:
+                        primaryArtifactRef: <+input>
             environment:
               environmentRef: account.Dev
               infrastructureDefinitions:
