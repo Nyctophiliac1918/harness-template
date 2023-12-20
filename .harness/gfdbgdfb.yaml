@@ -1,0 +1,18 @@
+inputSet:
+  name: gfdbgdfb
+  identifier: gfdbgdfb
+  orgIdentifier: NgTriggersOrg
+  projectIdentifier: karan_test
+  pipeline:
+    identifier: karan_test
+    stages:
+      - stage:
+          identifier: deploy
+          type: Deployment
+          spec:
+            service:
+              serviceRef: org.test1k8
+            environment:
+              environmentRef: account.Dev
+              infrastructureDefinitions:
+                - identifier: dfdsf
