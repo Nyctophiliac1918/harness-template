@@ -16,11 +16,4 @@ inputSet:
                 - step:
                     identifier: ShellScript_1
                     type: ShellScript
-                    timeout: 15m
-  provider:
-    type: Others
-    title: Third-party Git provider
-    info: Store pipeline in a third party Git provider
-    icon: service-github
-    size: 20
-    disabled: false
+                    timeout: 2h 5m
