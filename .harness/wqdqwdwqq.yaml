@@ -1,0 +1,16 @@
+inputSet:
+  name: wqdqwdwqq
+  identifier: wqdqwdwqq
+  orgIdentifier: NgTriggersOrg
+  projectIdentifier: karan_test
+  pipeline:
+    identifier: ci_pipeline
+    properties:
+      ci:
+        codebase:
+          repoName: sdew
+          build:
+            type: branch
+            spec:
+              branch: dewe
+  object Object: pipeline.properties.ci.codebase
