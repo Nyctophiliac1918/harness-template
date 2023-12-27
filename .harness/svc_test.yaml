@@ -3,3 +3,9 @@ service:
   identifier: svc_test
   orgIdentifier: NgTriggersOrg
   projectIdentifier: karan_test
+  serviceDefinition:
+    spec:
+      release:
+        name: release-<+INFRA_KEY_SHORT_ID>
+    type: Kubernetes
+  gitOpsEnabled: true
