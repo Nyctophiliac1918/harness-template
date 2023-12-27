@@ -1,5 +1,6 @@
 inputSet:
   name: wqdqwdwqq
+  tags: {}
   identifier: wqdqwdwqq
   orgIdentifier: NgTriggersOrg
   projectIdentifier: karan_test
@@ -8,9 +9,9 @@ inputSet:
     properties:
       ci:
         codebase:
-          repoName: sdew
+          connectorRef: account.Karan_github
+          repoName: harness-template
           build:
             type: branch
             spec:
               branch: dewe
-  object Object: pipeline.properties.ci.codebase
