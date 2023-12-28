@@ -1,0 +1,6 @@
+pipeline:
+  name: wefgewarf
+  identifier: wefgewarf
+  projectIdentifier: karan_test
+  orgIdentifier: NgTriggersOrg
+  tags: {}
