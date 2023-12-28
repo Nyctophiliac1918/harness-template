@@ -1,0 +1,6 @@
+pipeline:
+  name: hgcfyg
+  identifier: hgcfyg
+  projectIdentifier: karan_test
+  orgIdentifier: NgTriggersOrg
+  tags: {}
