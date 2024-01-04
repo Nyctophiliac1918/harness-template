@@ -1,0 +1,9 @@
+overlayInputSet:
+  name: dszvdsFVds
+  identifier: dszvdsFVds
+  orgIdentifier: NgTriggersOrg
+  projectIdentifier: karan_test
+  pipelineIdentifier: ci_pipeline
+  inputSetReferences:
+    - hgfh
+  tags: {}
