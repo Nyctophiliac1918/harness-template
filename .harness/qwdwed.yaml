@@ -1,0 +1,18 @@
+inputSet:
+  name: qwdwed
+  identifier: qwdwed
+  orgIdentifier: NgTriggersOrg
+  projectIdentifier: karan_test
+  pipeline:
+    identifier: fyjguhgkuh
+    stages:
+      - stage:
+          identifier: custom
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    timeout: 5m
