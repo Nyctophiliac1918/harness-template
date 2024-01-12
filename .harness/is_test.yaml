@@ -1,0 +1,18 @@
+inputSet:
+  name: is test
+  identifier: is_test
+  orgIdentifier: NgTriggersOrg
+  projectIdentifier: karan_test
+  pipeline:
+    identifier: github_test
+    stages:
+      - stage:
+          identifier: asd
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    timeout: 5m
