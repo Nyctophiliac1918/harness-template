@@ -28,3 +28,10 @@ pipeline:
                     outputVariables: []
                   timeout: <+input>
         tags: {}
+    - stage:
+        name: LKJNLKJ
+        identifier: LKJNLKJ
+        tags: {}
+        template:
+          templateRef: account.stage_a2_tempalte
+          versionLabel: v23
