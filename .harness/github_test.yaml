@@ -49,3 +49,31 @@ pipeline:
           templateRef: account.stage_a2_tempalte
           versionLabel: v23
           gitBranch: main
+    - stage:
+        name: kjnkj
+        identifier: kjnkj
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec:
+                    shell: Sh
+                    command: echo 1
+  properties:
+    ci:
+      codebase:
+        connectorRef: <+input>
+        repoName: <+input>
+        build: <+input>
