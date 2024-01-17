@@ -28,3 +28,24 @@ pipeline:
                     outputVariables: []
                   timeout: <+input>
         tags: {}
+    - stage:
+        name: inline
+        identifier: inline
+        tags: {}
+        template:
+          templateRef: account.stageTempTestAccLevelEnv
+          versionLabel: v1
+          templateInputs:
+            type: Deployment
+            spec:
+              service:
+                serviceRef: <+input>
+                serviceInputs: <+input>
+    - stage:
+        name: remote
+        identifier: remote
+        tags: {}
+        template:
+          templateRef: account.stage_a2_tempalte
+          versionLabel: v23
+          gitBranch: main
