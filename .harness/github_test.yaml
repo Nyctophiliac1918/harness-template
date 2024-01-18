@@ -49,9 +49,3 @@ pipeline:
           templateRef: account.stage_a2_tempalte
           versionLabel: v23
           gitBranch: main
-  properties:
-    ci:
-      codebase:
-        connectorRef: <+input>
-        repoName: <+input>
-        build: <+input>
