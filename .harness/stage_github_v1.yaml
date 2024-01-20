@@ -1,0 +1,27 @@
+template:
+  name: stage github
+  type: Stage
+  projectIdentifier: karan_test
+  orgIdentifier: NgTriggersOrg
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: ShellScript_1
+              identifier: ShellScript_1
+              spec:
+                shell: Bash
+                executionTarget: {}
+                source:
+                  type: Inline
+                  spec:
+                    script: echo 2
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
+  identifier: stage_github
+  versionLabel: v1
