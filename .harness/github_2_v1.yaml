@@ -1,0 +1,62 @@
+template:
+  name: github 2
+  type: Pipeline
+  projectIdentifier: karan_test
+  orgIdentifier: NgTriggersOrg
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: setup
+          identifier: setup
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: ShellScript
+                    name: ShellScript_1
+                    identifier: ShellScript_1
+                    spec:
+                      shell: Bash
+                      executionTarget: {}
+                      source:
+                        type: Inline
+                        spec:
+                          script: echo 1
+                      environmentVariables: []
+                      outputVariables: []
+                    timeout: 10m
+          tags: {}
+      - stage:
+          name: test
+          identifier: test
+          description: ""
+          type: CI
+          spec:
+            cloneCodebase: true
+            slsa_provenance:
+              enabled: false
+            platform:
+              os: Linux
+              arch: Amd64
+            runtime:
+              type: Cloud
+              spec: {}
+            execution:
+              steps:
+                - step:
+                    type: Run
+                    name: Run_1
+                    identifier: Run_1
+                    spec:
+                      shell: Sh
+                      command: echo 100
+    properties:
+      ci:
+        codebase:
+          repoName: <+input>
+          build: <+input>
+  identifier: github_2
+  versionLabel: v1
