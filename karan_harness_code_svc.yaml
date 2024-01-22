@@ -1,5 +1,5 @@
 service:
-  name: karan harness code svc
+  name: karan svc
   identifier: karan_harness_code_svc
   orgIdentifier: NgTriggersOrg
   projectIdentifier: karan_test
