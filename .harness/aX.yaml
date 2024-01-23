@@ -1,0 +1,20 @@
+infrastructureDefinition:
+  name: aX
+  identifier: aX
+  provider:
+    type: Others
+    titleLabelKey: common.thirdPartyGitProvider
+    descriptionLabelKey: common.thirdPartyGitProviderInfo
+    icon: service-github
+    size: 20
+    disabled: false
+  orgIdentifier: NgTriggersOrg
+  projectIdentifier: karan_test
+  environmentRef: jfghuh
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: <+input>
+    namespace: <+input>
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false
