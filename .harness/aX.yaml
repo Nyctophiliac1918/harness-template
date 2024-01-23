@@ -1,13 +1,6 @@
 infrastructureDefinition:
   name: aX
   identifier: aX
-  provider:
-    type: Others
-    titleLabelKey: common.thirdPartyGitProvider
-    descriptionLabelKey: common.thirdPartyGitProviderInfo
-    icon: service-github
-    size: 20
-    disabled: false
   orgIdentifier: NgTriggersOrg
   projectIdentifier: karan_test
   environmentRef: jfghuh
