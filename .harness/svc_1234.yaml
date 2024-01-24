@@ -1,0 +1,5 @@
+service:
+  name: svc 1234
+  identifier: svc_1234
+  orgIdentifier: NgTriggersOrg
+  projectIdentifier: karan_test
