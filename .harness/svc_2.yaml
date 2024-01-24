@@ -3,3 +3,6 @@ service:
   identifier: svc_2
   orgIdentifier: default
   projectIdentifier: karan_test
+  serviceDefinition:
+    spec: {}
+    type: Kubernetes
