@@ -1,0 +1,7 @@
+environment:
+  name: gitx testing
+  identifier: gitx_testing
+  accountId: px7xd_BFRCi-pfWPYXVjvw
+  orgIdentifier: NgTriggersOrg
+  projectIdentifier: karan_test
+  type: PreProduction
