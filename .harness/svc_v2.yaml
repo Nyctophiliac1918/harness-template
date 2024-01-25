@@ -1,0 +1,7 @@
+service:
+  name: svc v2
+  identifier: svc_v2
+  serviceDefinition:
+    type: Kubernetes
+    spec: {}
+  gitOpsEnabled: false
