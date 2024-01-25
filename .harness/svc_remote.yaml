@@ -1,0 +1,5 @@
+service:
+  name: svc remote
+  identifier: svc_remote
+  orgIdentifier: default
+  projectIdentifier: demokaran
