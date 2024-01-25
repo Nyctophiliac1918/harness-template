@@ -1,0 +1,5 @@
+service:
+  name: svc r 2
+  identifier: svc_r_2
+  orgIdentifier: default
+  projectIdentifier: demokaran
