@@ -1,0 +1,5 @@
+service:
+  name: hello2
+  identifier: hello2
+  orgIdentifier: NgTriggersOrg
+  projectIdentifier: karan_test
