@@ -1,0 +1,5 @@
+service:
+  name: sdacadsc1
+  identifier: sdacadsc1
+  orgIdentifier: default
+  projectIdentifier: demokaran
