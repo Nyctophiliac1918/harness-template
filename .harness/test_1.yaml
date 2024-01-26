@@ -1,0 +1,69 @@
+pipeline:
+  name: test 1
+  identifier: test_1
+  projectIdentifier: demokaran
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: sdv
+        identifier: sdv
+        description: ""
+        type: Deployment
+        spec:
+          deploymentType: Kubernetes
+          service:
+            serviceRef: <+input>
+            serviceInputs: <+input>
+          environment:
+            environmentRef: <+input>
+            deployToAll: false
+            environmentInputs: <+input>
+            serviceOverrideInputs: <+input>
+            infrastructureDefinitions: <+input>
+          execution:
+            steps:
+              - step:
+                  type: Verify
+                  name: Verify_1
+                  identifier: Verify_1
+                  spec:
+                    isMultiServicesOrEnvs: false
+                    type: Auto
+                    monitoredService:
+                      type: Default
+                      spec: {}
+                    spec:
+                      sensitivity: MEDIUM
+                      duration: 5m
+                      deploymentTag: <+artifacts.primary.tag>
+                  timeout: 2h
+                  failureStrategies:
+                    - onFailure:
+                        errors:
+                          - Verification
+                        action:
+                          type: ManualIntervention
+                          spec:
+                            timeout: 2h
+                            onTimeout:
+                              action:
+                                type: StageRollback
+                    - onFailure:
+                        errors:
+                          - Unknown
+                        action:
+                          type: ManualIntervention
+                          spec:
+                            timeout: 2h
+                            onTimeout:
+                              action:
+                                type: Ignore
+            rollbackSteps: []
+        tags: {}
+        failureStrategies:
+          - onFailure:
+              errors:
+                - AllErrors
+              action:
+                type: StageRollback
