@@ -1,0 +1,8 @@
+environment:
+  name: env appd
+  identifier: env_appd
+  description: ""
+  tags: {}
+  type: PreProduction
+  orgIdentifier: default
+  projectIdentifier: demokaran
