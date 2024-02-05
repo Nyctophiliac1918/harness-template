@@ -1,4 +1,9 @@
 inputSet:
+  name: test for different loacation
+  tags: {}
+  identifier: test_for_different_loacation
+  orgIdentifier: default
+  projectIdentifier: karan_test
   pipeline:
     identifier: testing_moving
     stages:
@@ -11,8 +16,4 @@ inputSet:
                 - step:
                     identifier: ShellScript_1
                     type: ShellScript
-                    timeout: ""
-  name: test for different loacation
-  identifier: test_for_different_loacation
-  orgIdentifier: default
-  projectIdentifier: karan_test
+                    timeout: 5m
