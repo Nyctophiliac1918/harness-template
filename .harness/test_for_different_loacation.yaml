@@ -1,0 +1,18 @@
+inputSet:
+  pipeline:
+    identifier: testing_moving
+    stages:
+      - stage:
+          identifier: custom
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    timeout: ""
+  name: test for different loacation
+  identifier: test_for_different_loacation
+  orgIdentifier: default
+  projectIdentifier: karan_test
