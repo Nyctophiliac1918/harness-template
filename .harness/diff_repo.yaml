@@ -1,0 +1,16 @@
+inputSet:
+  pipeline:
+    identifier: harness_code
+    properties:
+      ci:
+        codebase:
+          repoName: test
+          build:
+            spec:
+              branch: main
+            type: branch
+    object Object: properties.ci.codebase
+  name: diff repo
+  identifier: diff_repo
+  orgIdentifier: default
+  projectIdentifier: karan_test
