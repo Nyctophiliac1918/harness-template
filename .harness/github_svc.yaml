@@ -1,0 +1,5 @@
+service:
+  name: github svc
+  identifier: github_svc
+  orgIdentifier: default
+  projectIdentifier: get_started
