@@ -1,0 +1,19 @@
+service:
+  name: svc gitops
+  identifier: svc_gitops
+  serviceDefinition:
+    type: Kubernetes
+    spec:
+      manifests:
+        - manifest:
+            identifier: ms123
+            type: ReleaseRepo
+            spec:
+              store:
+                type: HarnessCode
+                spec:
+                  gitFetchType: Branch
+                  paths: <+input>
+                  branch: main
+                  repoName: test
+  gitOpsEnabled: true
