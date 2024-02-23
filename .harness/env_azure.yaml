@@ -1,0 +1,8 @@
+environment:
+  name: env_azure
+  identifier: env_azure
+  description: ""
+  tags: {}
+  type: PreProduction
+  orgIdentifier: default
+  projectIdentifier: demokaran
