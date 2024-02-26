@@ -1,0 +1,5 @@
+service:
+  name: test moving to gh
+  identifier: test_moving_to_gh
+  orgIdentifier: default
+  projectIdentifier: karan_test
