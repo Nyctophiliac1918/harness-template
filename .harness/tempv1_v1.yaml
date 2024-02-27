@@ -1,0 +1,46 @@
+template:
+  name: tempv1
+  identifier: tempv1
+  versionLabel: v1
+  type: MonitoredService
+  projectIdentifier: demokaran
+  orgIdentifier: default
+  tags: {}
+  spec:
+    serviceRef: <+input>
+    environmentRef: <+input>
+    type: Application
+    sources:
+      healthSources:
+        - name: hs temp
+          identifier: hs_temp
+          type: AppDynamics
+          spec:
+            applicationName: cv-app
+            tierName: <+input>
+            metricData:
+              Errors: true
+              Performance: true
+            metricDefinitions:
+              - identifier: appdMetric
+                metricName: appdMetric
+                completeMetricPath: <+input>
+                groupName: g1
+                sli:
+                  enabled: true
+                analysis:
+                  riskProfile:
+                    riskCategory: Performance_Other
+                    thresholdTypes:
+                      - ACT_WHEN_HIGHER
+                  liveMonitoring:
+                    enabled: true
+                  deploymentVerification:
+                    enabled: false
+            feature: Application Monitoring
+            connectorRef: appd_test
+            metricPacks:
+              - identifier: Errors
+                metricThresholds: []
+              - identifier: Performance
+                metricThresholds: []
