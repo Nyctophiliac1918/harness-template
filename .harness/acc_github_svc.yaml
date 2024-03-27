@@ -1,0 +1,3 @@
+service:
+  name: acc github svc
+  identifier: acc_github_svc
