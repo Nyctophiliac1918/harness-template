@@ -13,8 +13,21 @@ pipeline:
         spec:
           deploymentType: Kubernetes
           service:
-            serviceRef: <+input>
-            serviceInputs: <+input>
+            serviceRef: os_svc
+            serviceInputs:
+              serviceDefinition:
+                type: Kubernetes
+                spec:
+                  manifests:
+                    - manifest:
+                        identifier: ms1
+                        type: OpenshiftTemplate
+                        spec:
+                          store:
+                            type: Github
+                            spec:
+                              paths: <+input>
+                          paramsPaths: <+input>
           environment:
             environmentRef: <+input>
             deployToAll: false
