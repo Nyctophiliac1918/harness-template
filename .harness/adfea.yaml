@@ -1,0 +1,9 @@
+service:
+  name: adfea
+  identifier: adfea
+  serviceDefinition:
+    type: Kubernetes
+    spec: {}
+  gitOpsEnabled: false
+  orgIdentifier: NgTriggersOrg
+  projectIdentifier: karan_test
