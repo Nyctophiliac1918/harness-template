@@ -1,0 +1,6 @@
+environment:
+  name: test env gh
+  identifier: test_env_gh
+  orgIdentifier: default
+  projectIdentifier: karan_test
+  type: PreProduction
