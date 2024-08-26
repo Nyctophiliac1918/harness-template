@@ -1,5 +1,5 @@
 pipeline:
-  name: test2
+  name: test234
   identifier: test2
   projectIdentifier: CODEPRod1Sanity
   orgIdentifier: default
