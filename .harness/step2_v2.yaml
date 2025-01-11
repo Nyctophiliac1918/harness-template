@@ -1,0 +1,12 @@
+template:
+  name: step2
+  identifier: step2
+  type: Step
+  projectIdentifier: karantest
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Wait
+    spec:
+      duration: 50m
+  versionLabel: v2
