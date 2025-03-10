@@ -1,0 +1,30 @@
+pipeline:
+  name: gh pipeline
+  identifier: gh_pipeline
+  projectIdentifier: DoNotDelete
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: custom
+        identifier: custom
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: wait
+                  identifier: wait
+                  template:
+                    templateRef: account.karanstep1
+                    versionLabel: v1
+                    gitBranch: main
+        tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: karangh
+        repoName: harness-template
+        build: <+input>
+        sparseCheckout: []
